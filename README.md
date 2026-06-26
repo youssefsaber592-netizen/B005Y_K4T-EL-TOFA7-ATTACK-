@@ -9,7 +9,7 @@ A fast-paced 2D Arcade Time-Attack Platformer game built using **Godot 4**. The 
 ### 🎮 Main Menu Screen
 The arcade-style main menu with custom pixel text, high-score tracking, and custom button themes.
 <p align="center">
-  <img src="project%20description/Screenshot%202026-06-26%20085752.png" width="700" alt="Main Menu">
+  <img src=""D:\level 2 semester 2 projects\computer graphics\graphics\project description\Screenshot 2026-06-26 085752.png"" width="700" alt="Main Menu">
 </p>
 
 ### 🍏 Gameplay & Juice Elements
