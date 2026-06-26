@@ -52,5 +52,6 @@ Dynamic system warnings for health drops, Game Over sequences, and ultimate Vict
 
 1. Clone this repository:
    ```bash
-[   git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-](https://github.com/youssefsaber592-netizen/B005Y_K4T-EL-TOFA7-ATTACK-.git)
+[   git clone 
+(https://github.com/youssefsaber592-netizen/B005Y_K4T-EL-TOFA7-ATTACK-.git)
+]
