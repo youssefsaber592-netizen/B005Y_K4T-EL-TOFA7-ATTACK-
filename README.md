@@ -20,6 +20,6 @@ A fast-paced 2D Arcade Platformer game built using **Godot 4**. The game challen
 
 ## 🚀 How to Play
 
-1. Clone this repository: `git clone https://github.com/YOUR_USERNAME/B005Y_K4T.git`
+1. Clone this repository: `[git clone https://github.com/YOUR_USERNAME/B005Y_K4T.git](https://github.com/youssefsaber592-netizen/B005Y_K4T-EL-TOFA7-ATTACK-.git)`
 2. Open the project inside **Godot 4.x**.
 3. Run the `main.tscn` scene!
