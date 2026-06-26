@@ -1,35 +1,29 @@
-# ⚡ B005Y_K4T: EL TOFA7 ATTACK ⚡
-
-A fast-paced 2D Arcade Time-Attack Platformer game built using **Godot 4**. The game challenges players to collect apples under strict time constraints, featuring dynamic game feels, persistent local storage, and real-time state management.
-
----
-
 ## 📸 Game Previews & Showcase
 
 ### 🎮 Main Menu Screen
 The arcade-style main menu with custom pixel text, high-score tracking, and custom button themes.
 <p align="center">
-  <img src="screenshots/Screenshot 2026-06-26 085752.png" width="700" alt="Main Menu">
+  <img src="https://raw.githubusercontent.com/youssefsaber592-netizen/B005Y_K4T-EL-TOFA7-ATTACK-/main/project%20description/Screenshot%202026-06-26%20085752.png" width="700" alt="Main Menu">
 </p>
 
 ### 🍏 Gameplay & Juice Elements
 Real-time animated notifications for picking up items, clearing levels, and managing intense level switches.
 <p align="center">
-  <img src="screenshots/Screenshot 2026-06-26 085629.png" width="45%" alt="Level Start">
-  <img src="screenshots/Screenshot 2026-06-26 085804.png" width="45%" alt="Apple Collected">
+  <img src="https://raw.githubusercontent.com/youssefsaber592-netizen/B005Y_K4T-EL-TOFA7-ATTACK-/main/project%20description/Screenshot%202026-06-26%20085629.png" width="45%" alt="Level Start">
+  <img src="https://raw.githubusercontent.com/youssefsaber592-netizen/B005Y_K4T-EL-TOFA7-ATTACK-/main/project%20description/Screenshot%202026-06-26%20085804.png" width="45%" alt="Apple Collected">
 </p>
 
 <p align="center">
-  <img src="screenshots/Screenshot 2026-06-26 085813.png" width="45%" alt="Level Cleared">
-  <img src="screenshots/Screenshot 2026-06-26 085818.png" width="45%" alt="Level 2 Fight">
+  <img src="https://raw.githubusercontent.com/youssefsaber592-netizen/B005Y_K4T-EL-TOFA7-ATTACK-/main/project%20description/Screenshot%202026-06-26%20085813.png" width="45%" alt="Level Cleared">
+  <img src="https://raw.githubusercontent.com/youssefsaber592-netizen/B005Y_K4T-EL-TOFA7-ATTACK-/main/project%20description/Screenshot%202026-06-26%20085818.png" width="45%" alt="Level 2 Fight">
 </p>
 
 ### 💀 Critical States & Victory
 Dynamic system warnings for health drops, Game Over sequences, and ultimate Victory conditions.
 <p align="center">
-  <img src="screenshots/Screenshot 2026-06-26 085831.png" width="31%" alt="Heart Lost">
-  <img src="screenshots/Screenshot 2026-06-26 085846.png" width="31%" alt="Last Heart Warning">
-  <img src="screenshots/Screenshot 2026-06-26 085906.png" width="31%" alt="Victory Screen">
+  <img src="https://raw.githubusercontent.com/youssefsaber592-netizen/B005Y_K4T-EL-TOFA7-ATTACK-/main/project%20description/Screenshot%202026-06-26%20085831.png" width="31%" alt="Heart Lost">
+  <img src="https://raw.githubusercontent.com/youssefsaber592-netizen/B005Y_K4T-EL-TOFA7-ATTACK-/main/project%20description/Screenshot%202026-06-26%20085846.png" width="31%" alt="Last Heart Warning">
+  <img src="https://raw.githubusercontent.com/youssefsaber592-netizen/B005Y_K4T-EL-TOFA7-ATTACK-/main/project%20description/Screenshot%202026-06-26%20085906.png" width="31%" alt="Victory Screen">
 </p>
 ## 🎮 Key Features
 
