@@ -1,0 +1,225 @@
+[gd_scene format=3 uid="uid://cdaxnqhyxrv6f"]
+
+[ext_resource type="Script" uid="uid://b1rk54siyinxe" path="res://script/main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bpnhba1skqfw7" path="res://levels/level1.tscn" id="1_ig7tw"]
+[ext_resource type="FontFile" uid="uid://dtcviq16gm732" path="res://assets/fonts/Square-Black.ttf" id="3_h2yge"]
+[ext_resource type="AudioStream" uid="uid://dj87mb5hbguuf" path="res://assets/sounds/back-ground-music_36sec-499242.mp3" id="4_1bvp3"]
+[ext_resource type="FontFile" uid="uid://d10nwwfitkgq3" path="res://assets/fonts/PixeloidSans.ttf" id="4_lquwl"]
+[ext_resource type="Texture2D" uid="uid://6htu42fc0ysm" path="res://assets/images/buttoms/Play.png" id="5_272bh"]
+[ext_resource type="Texture2D" uid="uid://ch7xrlfbyf7y3" path="res://assets/images/buttoms/Close.png" id="6_5vw27"]
+[ext_resource type="Texture2D" uid="uid://c8ryschvsy6mv" path="res://assets/images/Background/Green.png" id="7_5vw27"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xm2m"]
+bg_color = Color(0.32156864, 0.6666667, 0.5882353, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 5
+
+[node name="Main" type="Node2D" unique_id=213848464]
+script = ExtResource("1_0xm2m")
+
+[node name="LevelRoot" parent="." unique_id=1921521853 instance=ExtResource("1_ig7tw")]
+position = Vector2(-14, -4)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1597292182]
+
+[node name="ScorePanel" type="Panel" parent="HUD" unique_id=806192039]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -80.0
+offset_top = 20.0
+offset_right = 80.0
+offset_bottom = 70.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0xm2m")
+
+[node name="ScoreLabel" type="Label" parent="HUD/ScorePanel" unique_id=716193880]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.5
+offset_top = -16.0
+offset_right = 48.5
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_h2yge")
+theme_override_font_sizes/font_size = 32
+text = "SCORE:0"
+
+[node name="LivesLabel" type="Label" parent="HUD/ScorePanel" unique_id=1042902948]
+texture_filter = 1
+layout_mode = 0
+offset_left = -506.0
+offset_top = 33.0
+offset_right = -321.0
+offset_bottom = 88.0
+theme_override_font_sizes/font_size = 40
+text = "❤️ ❤️ ❤️"
+
+[node name="ProgressLabel" type="Label" parent="HUD/ScorePanel" unique_id=468757364]
+texture_filter = 1
+layout_mode = 0
+offset_left = -495.0
+offset_top = 93.0
+offset_right = -311.5
+offset_bottom = 133.0
+theme_override_colors/font_color = Color(0.07058824, 0.44313726, 0.34509805, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("4_lquwl")
+theme_override_font_sizes/font_size = 25
+text = "PROGRESS :"
+
+[node name="TimeLabel" type="Label" parent="HUD/ScorePanel" unique_id=1147378641]
+layout_mode = 0
+offset_left = -496.0
+offset_top = 133.0
+offset_right = -351.0
+offset_bottom = 164.0
+theme_override_colors/font_color = Color(0.07058824, 0.44313726, 0.34509805, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("4_lquwl")
+theme_override_font_sizes/font_size = 25
+
+[node name="ColorRect" type="ColorRect" parent="HUD" unique_id=1022050292]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -7.0
+offset_top = -4.0
+offset_right = 3.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="NotificationLabel" type="Label" parent="HUD" unique_id=255228571]
+texture_filter = 1
+custom_minimum_size = Vector2(300, 0)
+offset_left = 491.0
+offset_top = 95.0
+offset_right = 791.0
+offset_bottom = 142.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.6529304, 0, 0.033127047, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("4_lquwl")
+theme_override_font_sizes/font_size = 38
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="MainMenu" type="Control" parent="HUD" unique_id=1155308085]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuBackground" type="TextureRect" parent="HUD/MainMenu" unique_id=1528319312]
+texture_filter = 1
+layout_mode = 0
+offset_right = 1282.0
+offset_bottom = 709.0
+texture = ExtResource("7_5vw27")
+
+[node name="GameTitle" type="Label" parent="HUD/MainMenu" unique_id=1277896534]
+texture_filter = 1
+layout_mode = 0
+offset_left = 164.0
+offset_top = 56.0
+offset_right = 1168.0
+offset_bottom = 261.0
+theme_override_colors/font_color = Color(0, 0.5669892, 0.89522994, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("4_lquwl")
+theme_override_font_sizes/font_size = 40
+text = "🔥W3LK0M3 G4M3R5🔥
+⚡ B005Y_K4T: EL TOFA7_ATTACK ⚡
+⏱️ RUN OR DIE 45s ⏱️"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScoreLabel" type="Label" parent="HUD/MainMenu" unique_id=89205966]
+texture_filter = 1
+layout_mode = 0
+offset_left = 490.0
+offset_top = 315.0
+offset_right = 826.0
+offset_bottom = 364.0
+theme_override_colors/font_color = Color(0.78927124, 0.73412496, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("4_lquwl")
+theme_override_font_sizes/font_size = 40
+
+[node name="PlayButton" type="Button" parent="HUD/MainMenu" unique_id=1398705014]
+texture_filter = 1
+layout_mode = 0
+offset_left = 390.0
+offset_top = 465.0
+offset_right = 510.0
+offset_bottom = 535.0
+theme_override_colors/font_color = Color(0.20392157, 1, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_constants/h_separation = 3
+theme_override_constants/icon_max_width = 100
+theme_override_fonts/font = ExtResource("4_lquwl")
+theme_override_font_sizes/font_size = 30
+theme_override_icons/icon = ExtResource("5_272bh")
+text = "PLAY"
+icon = ExtResource("5_272bh")
+flat = true
+icon_alignment = 2
+expand_icon = true
+
+[node name="QuitButton" type="Button" parent="HUD/MainMenu" unique_id=632048738]
+texture_filter = 1
+layout_mode = 0
+offset_left = 782.0
+offset_top = 469.0
+offset_right = 900.0
+offset_bottom = 539.0
+theme_override_colors/font_color = Color(0.9703323, 0, 0.12763709, 1)
+theme_override_constants/outline_size = 4
+theme_override_constants/h_separation = 6
+theme_override_constants/icon_max_width = 32
+theme_override_fonts/font = ExtResource("4_lquwl")
+theme_override_font_sizes/font_size = 30
+theme_override_icons/icon = ExtResource("6_5vw27")
+text = "QUIT"
+icon = ExtResource("6_5vw27")
+flat = true
+icon_alignment = 2
+expand_icon = true
+
+[node name="back ground" type="AudioStreamPlayer" parent="." unique_id=1238398338]
+stream = ExtResource("4_1bvp3")
+volume_db = -17.428
+autoplay = true
+parameters/looping = true
+
+[node name="LevelTimer" type="Timer" parent="." unique_id=1194182837]
+one_shot = true

@@ -1,0 +1,335 @@
+[gd_scene format=4 uid="uid://dnhlx58vrgmg4"]
+
+[ext_resource type="Texture2D" uid="uid://c8ryschvsy6mv" path="res://assets/images/Background/Green.png" id="1_76ugp"]
+[ext_resource type="Texture2D" uid="uid://8p1tm05wstw3" path="res://assets/images/tilmap/Terrain (16x16).png" id="2_e8p81"]
+[ext_resource type="PackedScene" uid="uid://b8tjeybv3kwwf" path="res://scenes/player.tscn" id="3_55gdq"]
+[ext_resource type="PackedScene" uid="uid://dndmvnl4a743h" path="res://scenes/snail.tscn" id="4_crte6"]
+[ext_resource type="PackedScene" uid="uid://byv7vctuq051w" path="res://scenes/apple.tscn" id="5_hq01p"]
+[ext_resource type="Texture2D" uid="uid://c42rdja4goj8i" path="res://assets/images/tilmap/Checkpoint (Flag Idle)(64x64).png" id="7_bcewn"]
+[ext_resource type="FontFile" uid="uid://d10nwwfitkgq3" path="res://assets/fonts/PixeloidSans.ttf" id="7_e8p81"]
+[ext_resource type="Texture2D" uid="uid://dk1jsb6fdt4ms" path="res://assets/images/levels/02.png" id="8_55gdq"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pdtm5"]
+texture = ExtResource("2_e8p81")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+6:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:8/0 = 0
+7:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:8/0 = 0
+8:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+6:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:9/0 = 0
+7:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:9/0 = 0
+8:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+12:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+6:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:10/0 = 0
+7:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:10/0 = 0
+8:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_b3oru"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_pdtm5")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_045es"]
+atlas = ExtResource("7_bcewn")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omn1t"]
+atlas = ExtResource("7_bcewn")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lf3p4"]
+atlas = ExtResource("7_bcewn")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yydhl"]
+atlas = ExtResource("7_bcewn")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bekh1"]
+atlas = ExtResource("7_bcewn")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8bcou"]
+atlas = ExtResource("7_bcewn")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f7u7y"]
+atlas = ExtResource("7_bcewn")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jq2cn"]
+atlas = ExtResource("7_bcewn")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5s8o"]
+atlas = ExtResource("7_bcewn")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ls4ot"]
+atlas = ExtResource("7_bcewn")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tx362"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_045es")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_omn1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lf3p4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yydhl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bekh1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8bcou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f7u7y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jq2cn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5s8o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ls4ot")
+}],
+"loop": true,
+"name": &"flag",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8hd6v"]
+size = Vector2(31.000046, 57.00001)
+
+[node name="LevelRoot" type="Node2D" unique_id=1921521853]
+position = Vector2(2, 0)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=581387971]
+texture_filter = 1
+offset_top = 8.0
+offset_right = 1294.0
+offset_bottom = 720.0
+texture = ExtResource("1_76ugp")
+stretch_mode = 1
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1550037245]
+texture_filter = 1
+position = Vector2(1, 0)
+scale = Vector2(3, 3)
+tile_map_data = PackedByteArray("AAAAAA4AAAAGAAoAAAABAA4AAAAHAAoAAAACAA4AAAAHAAoAAAADAA4AAAAHAAoAAAAEAA4AAAAHAAoAAAAFAA4AAAAHAAoAAAAGAA4AAAAHAAoAAAAHAA4AAAAHAAoAAAAIAA4AAAAHAAoAAAAJAA4AAAAHAAoAAAAKAA4AAAAHAAoAAAALAA4AAAAHAAoAAAAMAA4AAAAHAAoAAAANAA4AAAAHAAoAAAAOAA4AAAAHAAoAAAAPAA4AAAAHAAoAAAAQAA4AAAAHAAoAAAARAA4AAAAHAAoAAAASAA4AAAAHAAoAAAATAA4AAAAHAAoAAAAUAA4AAAAHAAoAAAAVAA4AAAAHAAoAAAAWAA4AAAAHAAoAAAAXAA4AAAAHAAoAAAAYAA4AAAAHAAoAAAAZAA4AAAAHAAoAAAAaAA4AAAAIAAoAAAAAAAgAAAAGAAkAAAAAAAkAAAAGAAkAAAAAAAoAAAAGAAkAAAAAAAsAAAAGAAkAAAAAAAwAAAAGAAkAAAAAAA0AAAAGAAkAAAAaAAgAAAAIAAkAAAAaAAkAAAAIAAkAAAAaAAoAAAAIAAkAAAAaAAsAAAAIAAkAAAAaAAwAAAAIAAkAAAAaAA0AAAAIAAkAAAAaAAAAAAAIAAkAAAAaAAEAAAAIAAkAAAAaAAIAAAAIAAkAAAAaAAUAAAAIAAgAAAAaAAYAAAAIAAkAAAAaAAcAAAAIAAkAAAABAAAAAAAHAAkAAAACAAAAAAAHAAkAAAADAAAAAAAHAAkAAAAEAAAAAAAHAAkAAAAFAAAAAAAHAAkAAAAGAAAAAAAHAAkAAAAHAAAAAAAHAAkAAAAIAAAAAAAHAAkAAAAJAAAAAAAHAAkAAAAKAAAAAAAHAAkAAAALAAAAAAAHAAkAAAAMAAAAAAAHAAkAAAANAAAAAAAHAAkAAAAOAAAAAAAHAAkAAAAPAAAAAAAHAAkAAAAQAAAAAAAHAAkAAAARAAAAAAAHAAkAAAASAAAAAAAHAAkAAAATAAAAAAAHAAkAAAAUAAAAAAAHAAkAAAAVAAAAAAAHAAkAAAAWAAAAAAAHAAkAAAAXAAAAAAAHAAkAAAAYAAAAAAAHAAkAAAAZAAAAAAAHAAkAAAAAAAAAAAAGAAkAAAAAAAEAAAAGAAkAAAAAAAIAAAAGAAkAAAAAAAMAAAAGAAkAAAAAAAQAAAAGAAkAAAAAAAUAAAAGAAkAAAAAAAYAAAAGAAkAAAAAAAcAAAAGAAkAAAABAA0AAAAHAAkAAAACAA0AAAAHAAkAAAADAA0AAAAHAAkAAAAZAAUAAAAHAAgAAAAZAAYAAAAHAAoAAAAEAA0AAAAHAAkAAAAFAA0AAAAHAAkAAAAGAA0AAAAHAAkAAAAHAA0AAAAHAAgAAAAIAA0AAAAHAAgAAAAJAA0AAAAHAAgAAAAKAA0AAAAHAAgAAAALAA0AAAAHAAgAAAAMAA0AAAAHAAgAAAANAA0AAAAHAAgAAAAOAA0AAAAHAAgAAAAPAA0AAAAHAAgAAAAQAA0AAAAHAAgAAAARAA0AAAAHAAgAAAASAA0AAAAHAAgAAAATAA0AAAAHAAgAAAAUAA0AAAAHAAgAAAAVAA0AAAAHAAgAAAAWAA0AAAAHAAgAAAAXAA0AAAAHAAgAAAAYAA0AAAAHAAgAAAAZAA0AAAAHAAgAAAAIAAcAAAAHAAgAAAAJAAcAAAAHAAgAAAAOAAgAAAAMAAkAAAASAAYAAAAMAAkAAAAWAAYAAAAMAAkAAAAKAAcAAAAHAAgAAAABAAcAAAAHAAgAAAABAAgAAAAHAAkAAAABAAkAAAAHAAkAAAABAAoAAAAHAAkAAAABAAsAAAAHAAkAAAABAAwAAAAHAAkAAAACAAcAAAAHAAgAAAACAAgAAAAHAAkAAAACAAkAAAAHAAkAAAACAAoAAAAHAAkAAAACAAsAAAAHAAkAAAACAAwAAAAHAAkAAAADAAkAAAAHAAgAAAADAAoAAAAHAAkAAAADAAsAAAAHAAkAAAADAAwAAAAHAAkAAAAEAAkAAAAHAAgAAAAEAAoAAAAHAAkAAAAEAAsAAAAHAAkAAAAEAAwAAAAHAAkAAAAFAAsAAAAHAAgAAAAFAAwAAAAHAAkAAAAGAAsAAAAHAAgAAAAGAAwAAAAHAAkAAAA=")
+tile_set = SubResource("TileSet_b3oru")
+
+[node name="player" parent="." unique_id=251796419 instance=ExtResource("3_55gdq")]
+position = Vector2(-146, 167)
+
+[node name="Enemies" type="Node2D" parent="." unique_id=1220787886]
+
+[node name="Snail" parent="Enemies" unique_id=274349624 instance=ExtResource("4_crte6")]
+position = Vector2(598, 593)
+
+[node name="Snail2" parent="Enemies" unique_id=1769353282 instance=ExtResource("4_crte6")]
+position = Vector2(1054, 591)
+
+[node name="Apples" type="Node2D" parent="." unique_id=156433789]
+
+[node name="Apple" parent="Apples" unique_id=623421082 instance=ExtResource("5_hq01p")]
+position = Vector2(455, 314)
+
+[node name="Apple2" parent="Apples" unique_id=1333268848 instance=ExtResource("5_hq01p")]
+position = Vector2(701, 350)
+
+[node name="Apple4" parent="Apples" unique_id=648761301 instance=ExtResource("5_hq01p")]
+position = Vector2(989.00006, 239)
+
+[node name="Apple5" parent="Apples" unique_id=1025004699 instance=ExtResource("5_hq01p")]
+position = Vector2(1175, 570)
+
+[node name="flag" type="AnimatedSprite2D" parent="." unique_id=2071858682]
+texture_filter = 1
+position = Vector2(1252, 191)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_tx362")
+animation = &"flag"
+autoplay = "flag"
+frame_progress = 0.110026404
+
+[node name="exite" type="Area2D" parent="." unique_id=110380867]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="exite" unique_id=1587499505]
+texture_filter = 1
+position = Vector2(1317, 192.00002)
+scale = Vector2(1.5, 1.5)
+shape = SubResource("RectangleShape2D_8hd6v")
+
+[node name="LivesLabel" type="Label" parent="." unique_id=967330399]
+texture_filter = 1
+offset_left = 935.0
+offset_top = 56.0
+offset_right = 1211.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0.095224045, 0.3445088, 0.8118653, 1)
+theme_override_colors/font_shadow_color = Color(0.25135276, 0, 0.029107708, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("7_e8p81")
+theme_override_font_sizes/font_size = 30
+text = "you are in  level "
+
+[node name="LevelDisplay" type="TextureRect" parent="." unique_id=948374857]
+texture_filter = 1
+offset_left = 1198.0
+offset_top = 54.0
+offset_right = 1243.0
+offset_bottom = 99.0
+texture = ExtResource("8_55gdq")
